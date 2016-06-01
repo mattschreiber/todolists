@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
   	password = params[:user][:password]
 
   	if user && user.authenticate(password)
-  		redirect_to root_path, notice: 'Login Successful.'
+  		redirect_to root_path, notice: 'Logged in successfully'
   	else
   		redirect_to login_path, alert: 'Incorrect Username or Password'
   	end
