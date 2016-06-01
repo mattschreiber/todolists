@@ -1,5 +1,5 @@
   class TodoItemsController < ApplicationController
-  before_action :set_todo_list, only: [:show, :edit, :update, :destroy]
+  before_action :set_todo_list
   before_action :set_todo_item, only: [:show, :edit, :update, :destroy]
 
   helper_method :set_todo_list
@@ -46,7 +46,7 @@
   def destroy
     @todo_item.destroy
     respond_to do |format|
-      format.html { redirect_to todo_lists_url, notice: 'Todo item was successfully destroyed.' }
+      format.html { redirect_to @todo_list, notice: 'Todo item was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
