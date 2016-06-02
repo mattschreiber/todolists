@@ -1,13 +1,9 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-
-  get 'sessions/create'
-
-  get 'sessions/destroy'
+ 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+ root 'todo_lists#index'
   resources :todo_lists do
     resources :todo_items
   end
@@ -17,7 +13,7 @@ Rails.application.routes.draw do
   delete '/logout' => 'sessions#destroy', as: 'logout' 
 
   # You can have the root of your site routed with "root"
-  root 'todo_lists#index'
+ 
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
