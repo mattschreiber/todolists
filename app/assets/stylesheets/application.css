@@ -27,7 +27,7 @@ form input[type=text], input[type=password] {
 	margin-bottom: 5px;
 	font-size: 12px;
 	font-weight: 400;
-	background-color: #E8E8E8;
+	/*background-color: #E8E8E8;*/
 }
 
 form input[type=submit]:active {
@@ -56,5 +56,17 @@ tbody td {
 	padding-right: 5px;
 	text-align: center;
 	min-width:100px;
+}
+
+.container.todoshow .label	{
+	font-size: 1.3em
+}
+
+.container.todoshow #listlinks {
+	margin-bottom: 20px;
+}
+
+.container.todoshow #newitem {
+	margin-top: 20px;
 }
 
