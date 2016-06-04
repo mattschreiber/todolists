@@ -1,4 +1,4 @@
 # todolists
 Final Project - Coursera - Rails with Active Record and Action Pack
 
-deployed at todolist32707.herokuapp.com
+deployed at https://todolist32707.herokuapp.com
